@@ -29,6 +29,9 @@ var count = 1
 var totalQty=0
 var TotalPrice=0
 
+
+function productTotalPrice(e) {
+    
 for (let i = 0; i < productArray.length; i+=2) {
     var ProductName = productArray[i].name;
     var BasePrice = productArray[i].price;
@@ -45,7 +48,12 @@ for (let i = 0; i < productArray.length; i+=2) {
     totalQty = totalQty+productCount
     TotalPrice = TotalPrice+priceAfterDiscount
 }
+return TotalPrice
+
+}
+var result = productTotalPrice(productArray)
 
 console.log(`Total item purchased: ${totalQty}`)
-console.log(`Total Price: ${TotalPrice}tk`)
+// console.log(`Total Price: ${TotalPrice}tk`)
+console.log(`Total Price: ${result}tk`)
 
