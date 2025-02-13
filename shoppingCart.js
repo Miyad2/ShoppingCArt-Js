@@ -31,8 +31,8 @@ var TotalPrice=0
 
 
 function productTotalPrice(e) {
-    
-for (let i = 0; i < productArray.length; i+=2) {
+
+for (let i = 0; i < e.length; i+=2) {
     var ProductName = productArray[i].name;
     var BasePrice = productArray[i].price;
     var reviews= productArray[i].reviews;
